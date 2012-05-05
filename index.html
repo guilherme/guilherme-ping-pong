@@ -1,14 +1,22 @@
 <html>
 <head>
-<style src="stylesheets/ping-pong.css"></style>
 </head>
 <body>
-<div id="screen">
-  <canvas id="game_screen" width="400" height="400">
-    Your browser do not support canvas.
-  </canvas>
+<style type='text/css'>
+div#screen {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+</style>
+<div id="game">
+  <div id="screen">
+    <canvas id="game_screen" width="400" height="400">
+      Your browser do not support canvas.
+    </canvas>
+  </div>
 </div>
-<script type='text/javascript' src="vendor/jquery-1.7.2.min.js"></script>
-<script type ='text/javascript' src="src/ping-pong-0.1.js"></script>
+<script type='text/javascript' src="./vendor/jquery-1.7.2.min.js"></script>
+<script type ='text/javascript' src="./src/ping-pong-0.1.js"></script>
 </body>
 </html>
