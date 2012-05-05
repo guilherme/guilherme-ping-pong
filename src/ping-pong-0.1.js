@@ -161,9 +161,13 @@ $(function() {
     $("body").bind('keydown',function(event) {
        switch(event.which) {
         case 37:
+          if(paused) 
+            return;
           P1.moveLeft();
           break;
         case 39:
+          if(paused) 
+            return;
           P1.moveRight();
           break;
         case 80:
